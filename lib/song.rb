@@ -10,7 +10,7 @@ class Song
 # FILE FORMAT: Action Bronson - Larry Csonka - indie.mp3
 
     song = Song.new(filename.split("-")[1].strip)
-    song.artist = (filename.split("-")[0].strip)
+    # song.artist = (filename.split("-")[0].strip)
     # song.artist.name = filename.split("-")[0].strip
       binding.pry
   end
