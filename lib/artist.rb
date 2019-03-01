@@ -18,8 +18,9 @@ class Artist
     @@all.each do |artist|
       if artist.name == name
         artist
+        # binding.pry
       else
-        Artist.new(name) == name
+        return Artist.new(name)
       end
     end
   end
@@ -32,5 +33,11 @@ class Artist
 
   def save
     @@all << self
+  end
+
+  def print_songs
+    @songs.each do |song|
+      puts song.name
+    end
   end
 end
