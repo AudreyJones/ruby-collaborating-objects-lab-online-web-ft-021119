@@ -4,12 +4,12 @@ class MP3Importer
 
   def initialize(path)
     @path = path ##"./spec/fixtures/mp3s" A STRING
-    # binding.pry
+
 
   end
 
   def files
-    # binding.pry
+
     @path
   end
 
