@@ -14,11 +14,9 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    # binding.pry
     @@all.each do |artist|
       if artist.name == name
         artist
-        # binding.pry
       else
         return Artist.new(name)
       end
@@ -26,7 +24,6 @@ class Artist
   end
 
   def add_song(song)
-    # binding.pry
     @songs << song
     song.artist = self
   end
