@@ -8,9 +8,9 @@ class Song
 
   def self.new_by_filename(filename) #"Michael Jackson - Black or White - pop.mp3"
     song = Song.new(filename.split("-")[1].strip)
-    binding.pry
     new_artist = Artist.new(filename.split("-")[0].strip)
     new_artist.add_song(song)
+      binding.pry
     # song.artist.name = filename.split("-")[0].strip
   end
 end
