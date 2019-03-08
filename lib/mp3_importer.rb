@@ -8,12 +8,6 @@ class MP3Importer
     Dir[@path].each {|file| @files << file}
   end
 
-  def files
-
-
-    @path
-  end
-
   def import
     Song.new_by_filename(some_filename)
   end
