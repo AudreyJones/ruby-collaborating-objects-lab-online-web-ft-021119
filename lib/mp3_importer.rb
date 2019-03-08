@@ -6,8 +6,7 @@ class MP3Importer
     @path = path ##"./spec/fixtures/mp3s"
     @files = []
   # Iterating over the contents of the mp3 folder; issue is first item in folder is hidden (.) file, so we need to #select only mp3 files.
-    Dir.entries(@path).select {|file| @files << file.include?(".mp3")
-    binding.pry}
+    Dir.entries(@path).select {|file| @files << file.include?(".mp3")}
 
   end
 
