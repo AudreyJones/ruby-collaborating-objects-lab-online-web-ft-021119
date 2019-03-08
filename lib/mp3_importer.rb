@@ -5,7 +5,7 @@ class MP3Importer
   def initialize(path)
     @path = path ##"./spec/fixtures/mp3s"
     @files = []
-    Dir["#{@path}/*"].each {|file| @files << file
+    Dir.entries(@path).each {|file| @files << file
     binding.pry}
 
   end
