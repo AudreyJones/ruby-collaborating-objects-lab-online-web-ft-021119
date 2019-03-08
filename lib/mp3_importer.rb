@@ -8,8 +8,7 @@ class MP3Importer
   end
 
   def files
-    # binding.pry
-    Dir[@path].each {|file| require file  }
+    Dir[@path].each {|file| require file}
 
     @path
   end
