@@ -4,7 +4,7 @@ class MP3Importer
 
   def initialize(path)
     @path = path ##"./spec/fixtures/mp3s"
-    @files = Dir[@path].collect {|file| @files << file}
+    @files = Dir[@path].collect {|file| file}
   end
 
   def import
