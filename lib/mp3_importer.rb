@@ -6,7 +6,7 @@ class MP3Importer
     @path = path ##"./spec/fixtures/mp3s"
     binding.pry
     @files = []
-    @files << Dir[@path].collect {|file| file}
+    Dir[@path].each {|file| @files << file}
   end
 
   def import
