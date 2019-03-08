@@ -5,10 +5,11 @@ class MP3Importer
   def initialize(path)
     @path = path ##"./spec/fixtures/mp3s"
     @files = []
+    Dir[@path].each {|file| @files << file}
   end
 
   def files
-    Dir[@path].each {|file| @files << file}
+    
 
     @path
   end
