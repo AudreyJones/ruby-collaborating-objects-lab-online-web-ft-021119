@@ -7,7 +7,7 @@ class MP3Importer
     @files = []
     Dir[@path].each {|file| @files << file
     binding.pry}
-      
+
   end
 
   def import
