@@ -8,7 +8,7 @@ class MP3Importer
   end
 
   def files
-    Dir[@path].each {|file| require file}
+    Dir[@path].each {|file| @files << file}
 
     @path
   end
