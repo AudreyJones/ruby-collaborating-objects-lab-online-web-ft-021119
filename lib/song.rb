@@ -8,7 +8,7 @@ class Song
 
   def self.new_by_filename(filename)
     song = Song.new(filename.split("-")[1].strip)
-    binding.pry
+    # binding.pry
     new_artist = Artist.new(filename.split("-")[0].strip)
     new_artist.add_song(song)
     # song.artist.name = filename.split("-")[0].strip
