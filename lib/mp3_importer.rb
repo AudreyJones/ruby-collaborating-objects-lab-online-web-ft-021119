@@ -6,12 +6,11 @@ class MP3Importer
     @path = path ##"./spec/fixtures/mp3s"
     @files = []
   # Iterating over the contents of the mp3 folder; issue is first item in folder is hidden (.) file, so we need to #select only mp3 files.
-    Dir.entries(@path).select do |file|
-      if file.include?(".mp3") == true
-        @files << file
-      end
-    end
-  binding.pry
+    # Dir.entries(@path).select do |file|
+    #   if file.include?(".mp3") == true
+    #     @files << file
+    #   end
+    # end
   end
 
   def import
