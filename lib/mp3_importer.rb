@@ -11,7 +11,6 @@ class MP3Importer
     #     @files << file
     #   end
     # end
-binding.pry
   end
 
   def import
