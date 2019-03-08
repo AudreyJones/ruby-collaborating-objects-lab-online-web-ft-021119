@@ -9,6 +9,7 @@ class MP3Importer
     Dir.entries(@path).select {|file|
       if file.include?(".mp3") == true
         @files << file
+      end
       }
   binding.pry
   end
