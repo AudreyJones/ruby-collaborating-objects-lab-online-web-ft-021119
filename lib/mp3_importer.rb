@@ -8,7 +8,7 @@ class MP3Importer
   end
 
   def files
-    binding.pry
+    # binding.pry
     Dir[@path].each {|file| require file  }
 
     @path
