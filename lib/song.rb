@@ -6,9 +6,11 @@ class Song
     @name = name
   end
 
-  def self.new_by_filename(filename)
+  def self.new_by_filename(filename) #"Michael Jackson - Black or White - pop.mp3"
     song = Song.new(filename.split("-")[1].strip)
-    # song.artist = (filename.split("-")[0].strip)
-    # song.artist.name = filename.split("-")[0].strip
+    new_artist = Artist.new(filename.split("-")[0].strip)
+    new_artist.add_song(song)
+    new_artist.save
+    song
   end
 end
